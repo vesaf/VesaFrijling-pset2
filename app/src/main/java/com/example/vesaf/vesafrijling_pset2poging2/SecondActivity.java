@@ -69,7 +69,7 @@ public class SecondActivity extends AppCompatActivity {
         if (!story.isFilledIn()) {
             placeholder = story.getNextPlaceholder();
             type_text.setText(getString(R.string.instruction, placeholder));
-            entry.setText(placeholder);
+            entry.setHint(placeholder);
         }
         else {
             Intent intent = new Intent(this, Third_Activity.class);
